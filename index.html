@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Thực hành về Object</title>
+</head>
+
+<body style="width: 50%; margin: 5% auto">
+    <table class="w3-table-all" id="table">
+        <thead>
+            <tr class="w3-red">
+                <th>Loại xe</th>
+                <th>Kiểu Mẫu</th>
+                <th>Cân nặng</th>
+                <th>Màu sắc</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+            <td>50</td>
+        </tr>
+    </table>
+
+    <script>
+        let cars = [
+            {
+                name: "Fiat",
+                model: "500",
+                weight: "850",
+                color: "black",
+            },
+            {
+                name: "BMW",
+                model: "Limited",
+                weight: "10000",
+                color: "grey",
+            }
+        ]
+
+       
+
+        for (let car of cars) {
+            let row = document.createElement("tr");
+
+            for (let key in car) {
+                let td = document.createElement("td");
+                td.innerHTML = car[key];
+
+                row.appendChild(td);
+            }
+            table.appendChild(row);
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+body{
+    background-image: url(https://burst.shopifycdn.com/photos/rain-drops-on-a-car.jpg?width=1000&format=pjpg&exif=0&iptc=0);
+    background-size: cover;
+}
+#form{
+    margin: 25vh auto;
+    border-radius: 5px;
+    border: 2px solid rgb(177, 171, 171);
+    width: 25vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.381);
+    color: rgb(172, 224, 227);
+    filter: drop-shadow(0 0 10px black);
+}
+#form input{
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+a{
+    color: rgb(59, 59, 59);
+}

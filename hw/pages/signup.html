@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/other.css">
+</head>
+<body>
+    <form action="" id="form">
+        <div>
+            <label for="name">Name:</label>
+            <input id="username" type="text" placeholder="Billy Milligan" required>
+        </div>
+        
+        <div>
+            <label for="email">Email:</label>
+            <input id="email" type="email" placeholder="person@hotmail.com" required>
+        </div>
+       
+        <div>
+            <label for="password">Password:</label>
+            <input id="pass" type="password" placeholder="1234r345WQ" required>
+        </div> 
+        <div>
+            <label for="confirm-pass">Confirm:</label>
+            <input id="confirm-pass" type="password" placeholder="1234r345WQ" required>
+        </div> 
+
+        <div style="display:flex; align-items: center; justify-content: space-between; width: 80%;">
+            <input type="submit" value="Sign up">
+            <a href="./login.html">Have an account?</a>
+        </div>
+    </form>
+
+    <script type="module" src="../js/app.js"></script>
+    <script type="module" src="../js/signup.js"></script>
+</body>
+</html>
